@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "pacepard-ui-agent": {
+      "command": "bun",
+      "args": [
+        "/Users/pro/Documents/madebydamola/ui-agent/src/talk_to_figma_mcp/server.ts"
+      ]
+    }
+  }
+}

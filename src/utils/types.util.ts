@@ -1,0 +1,29 @@
+export type IconFamilyType = 'polio' | 'fa' | 'feather';
+export type FontWeightType = 100 | 'thin' | 200 | 'xlight' | 300 | 'light' | 400 | 'regular' | 500 | 'medium' | 600 | 'semibold' | 700 | 'bold' | 800 | 'xbold' | 900 | 'black' | 'heavy'; 
+export type LoadingType = 'default' | 'resource' | 'loader'
+export type RefineType = 'default' | 'search' | 'filter';
+export type ResourceType = 'app'
+export type SizeType = 'xmini' | 'mini' | 'xxsm' | 'xsm' | 'sm' | 'rg' | 'default' | 'md' | 'lg' | 'xlg' | 'xxlg' | 'lgr';
+export type ButtonType = 'primary' | 'secondary' | 'ghost' | 'icon' | 'link' | 'gradient'
+export type SemanticType = 'normal' | 'default' | 'blue' | 'info' | 'yellow' | 'warning' | 'orange' | 'warning-2' | 'green' | 'success' | 'red' | 'error' | 'purple' | 'ongoing' | 'pink' | 'brown';
+export type DisabledType = 'default' | 'blind' | 'light' | 'visible';
+export type FlexReverseType = 'row' | 'column' | 'default' | 'wrap';
+export type FormatDateType = 'basic' | 'datetime' | 'datetime-slash' | 'datetime-separated' | 'separated' | 'localtime' | 'slashed'
+export type PositionType = 'default' | 'top' | 'top-left' | 'top-right' | 'top-center' | 'bottom' | 'bottom-left' | 'bottom-right' | 'bottom-center' | 'left' | 'right'
+export type UserType = 'superadmin' | 'admin' | 'business' | 'talent' | 'user';
+export type ApiServiceType = 'default' | 'backend' | 'identity' | 'core' | 'genius' | 'resource';
+export type ApiMethodType = 'GET' | 'POST' | 'PUT' | 'PATCH' | 'DELETE'
+export type QueryOrderType = 'desc' | 'asc'
+
+export type FileAcceptType = 'csv' | 'sheet' | 'pdf' | 'image' | 'video' | 'audo';
+export type CSVAcceptType = '.csv' | '.xls' | 'application/vnd.ms-excel' | 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
+export type TextAcceptType = 'text/plain' | 'text/html'
+export type VideoAcceptType = 'video/*'
+export type AudioAcceptType = 'audio/*'
+export type PDFAcceptType = '.pdf' | 'application/pdf'
+export type ImageAcceptType = 'image/x-png' | 'image/jpg' | 'image/jpeg' | 'image/png' | 'image/svg' | 'image/gif' | 'image/*' | 'image/x-eps'
+export type UploadAcceptType = Array<CSVAcceptType | ImageAcceptType | PDFAcceptType | VideoAcceptType | AudioAcceptType>;
+export type ListUIType = 'self' | 'resource' | 'details';
+export type FilterType = 'default' | 'user' | 'industry' | 'career' | 'field' | 'skill' | 'topic' | 'question'
+export type PagesearchType = 'search' | 'filter'
+

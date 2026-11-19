@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'inter_extrabold';
+    src: url('Inter-ExtraBold.woff2') format('woff2'),
+        url('Inter-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'inter_black';
+    src: url('Inter-Black.woff2') format('woff2'),
+        url('Inter-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'inter_bold';
+    src: url('Inter-Bold.woff2') format('woff2'),
+        url('Inter-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'inter_light';
+    src: url('Inter-Light.woff2') format('woff2'),
+        url('Inter-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'inter_extralight';
+    src: url('Inter-ExtraLight.woff2') format('woff2'),
+        url('Inter-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'inter_medium';
+    src: url('Inter-Medium.woff2') format('woff2'),
+        url('Inter-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'inter_thin';
+    src: url('Inter-Thin.woff2') format('woff2'),
+        url('Inter-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'inter';
+    src: url('Inter-Regular.woff2') format('woff2'),
+        url('Inter-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'inter_semibold';
+    src: url('Inter-SemiBold.woff2') format('woff2'),
+        url('Inter-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+.font-interxbold, .font-interxbold a, .font-interxbold span{
+    font-family: 'inter_extrabold' !important;
+}
+.font-interblack, .font-interblack a, .font-interblack span{
+    font-family: 'inter_black' !important;
+}
+.font-interbold, .font-interbold a, .font-interbold span{
+    font-family: 'inter_bold' !important;
+}
+.font-interlight, .font-interlight a, .font-interlight span{
+    font-family: 'inter_light' !important;
+}
+.font-interxlight, .font-interxlight a, .font-interxlight span{
+    font-family: 'inter_extralight' !important;
+}
+.font-intermedium, .font-intermedium a, .font-intermedium span{
+    font-family: 'inter_medium' !important;
+}
+.font-interthin, .font-interthin a, .font-interthin span{
+    font-family: 'inter_thin' !important;
+}
+.font-inter, .font-inter a, .font-inter span{
+    font-family: 'inter' !important;
+}
+.font-intersemibold, .font-intersemibold a, .font-intersemibold span{
+    font-family: 'inter_semibold' !important;
+}

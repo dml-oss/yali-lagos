@@ -1,0 +1,221 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-inter: "inter", sans-serif;
+  --font-interregular: "inter", sans-serif;
+  --font-interthin: "inter_thin", sans-serif;
+  --font-interxlight: "inter_extralight", sans-serif;
+  --font-interlight: "inter_light", sans-serif;
+  --font-intermedium: "inter_medium", sans-serif;
+  --font-intersemibold: "inter_semibold", sans-serif;
+  --font-interbold: "inter_bold", sans-serif;
+  --font-interblack: "inter_black", sans-serif;
+  --font-interxbold: "inter_extrabold", sans-serif;
+  --font-hostgro: "HostGrotesk-Regular", sans-serif;
+  --font-hostgro-light: "HostGrotesk-Light", sans-serif;
+  --font-hostgro-medium: "HostGrotesk-Medium", sans-serif;
+  --font-hostgro-semibold: "HostGrotesk-Semibold", sans-serif;
+  --font-hostgro-bold: "HostGrotesk-Bold", sans-serif;
+  --font-hostgro-xbold: "HostGrotesk-ExtraBold", sans-serif;
+  --font-frei: "freizeit_trialregular", sans-serif;
+  --font-frei-thin: "freizeit_trialthin", sans-serif;
+  --font-frei-light: "freizeit_triallight", sans-serif;
+  --font-frei-medium: "freizeit_trialmedium", sans-serif;
+  --font-frei-bold: "freizeit_trialbold", sans-serif;
+  --font-freibold: "freizeit_trialbold", sans-serif;
+  --font-frei-xbold: "freizeit_trialextrabold", sans-serif;
+  --font-freixbold: "freizeit_trialextrabold", sans-serif;
+  --font-clash: "clash_displayregular", sans-serif;
+  --font-clash-light: "clash_displaylight", sans-serif;
+  --font-clash-medium: "clash_displaymedium", sans-serif;
+  --font-clash-semibold: "clash_displaysemibold", sans-serif;
+  --font-clash-bold: "clash_displaybold", sans-serif;
+  --font-mona: "MonaSans-Regular", sans-serif;
+  --font-mona-medium: "MonaSans-Medium", sans-serif;
+  --font-mona-semibold: "MonaSans-SemiBold", sans-serif;
+  --font-mona-bold: "MonaSans-Bold", sans-serif;
+  --font-mona-xbold: "MonaSans-ExtraBold", sans-serif;
+  --font-mona-black: "MonaSans-Black", sans-serif;
+  --color-color-black: var(--color-black);
+  --color-color-blue: var(--color-blue);
+  --color-color-blue-dark: var(--color-blue-dark);
+  --color-color-error: var(--color-error);
+  --color-color-gray: var(--color-gray);
+  --color-color-green: var(--color-green);
+  --color-color-green-dark: var(--color-green-dark);
+  --color-color-info: var(--color-info);
+  --color-color-neutral: var(--color-neutral);
+  --color-color-ongoing: var(--color-ongoing);
+  --color-color-orange: var(--color-orange);
+  --color-color-orange-dark: var(--color-orange-dark);
+  --color-color-purple: var(--color-purple);
+  --color-color-purple-dark: var(--color-purple-dark);
+  --color-color-red: var(--color-red);
+  --color-color-red-dark: var(--color-red-dark);
+  --color-color-success: var(--color-success);
+  --color-color-warning: var(--color-warning);
+  --color-color-warning-2: var(--color-warning-2);
+  --color-color-white: var(--color-white);
+  --color-color-yellow: var(--color-yellow);
+  --color-color-yellow-dark: var(--color-yellow-dark);
+  --color-pab-100: var(--pab-100);
+  --color-pab-200: var(--pab-200);
+  --color-pab-25: var(--pab-25);
+  --color-pab-300: var(--pab-300);
+  --color-pab-400: var(--pab-400);
+  --color-pab-50: var(--pab-50);
+  --color-pab-500: var(--pab-500);
+  --color-pab-600: var(--pab-600);
+  --color-pab-700: var(--pab-700);
+  --color-pab-800: var(--pab-800);
+  --color-pab-900: var(--pab-900);
+  --color-pab-950: var(--pab-950);
+  --color-pacb-100: var(--pacb-100);
+  --color-pacb-200: var(--pacb-200);
+  --color-pacb-25: var(--pacb-25);
+  --color-pacb-300: var(--pacb-300);
+  --color-pacb-400: var(--pacb-400);
+  --color-pacb-50: var(--pacb-50);
+  --color-pacb-500: var(--pacb-500);
+  --color-pacb-600: var(--pacb-600);
+  --color-pacb-700: var(--pacb-700);
+  --color-pacb-800: var(--pacb-800);
+  --color-pacb-900: var(--pacb-900);
+  --color-pacb-950: var(--pacb-950);
+  --color-pag-100: var(--pag-100);
+  --color-pag-200: var(--pag-200);
+  --color-pag-25: var(--pag-25);
+  --color-pag-300: var(--pag-300);
+  --color-pag-400: var(--pag-400);
+  --color-pag-50: var(--pag-50);
+  --color-pag-500: var(--pag-500);
+  --color-pag-600: var(--pag-600);
+  --color-pag-700: var(--pag-700);
+  --color-pag-800: var(--pag-800);
+  --color-pag-900: var(--pag-900);
+  --color-pag-950: var(--pag-950);
+  --color-pagr-10: var(--pagr-10);
+  --color-pagr-100: var(--pagr-100);
+  --color-pagr-200: var(--pagr-200);
+  --color-pagr-25: var(--pagr-25);
+  --color-pagr-300: var(--pagr-300);
+  --color-pagr-400: var(--pagr-400);
+  --color-pagr-450: var(--pagr-450);
+  --color-pagr-50: var(--pagr-50);
+  --color-pagr-500: var(--pagr-500);
+  --color-pagr-600: var(--pagr-600);
+  --color-pagr-700: var(--pagr-700);
+  --color-pagr-800: var(--pagr-800);
+  --color-pagr-900: var(--pagr-900);
+  --color-pagr-950: var(--pagr-950);
+  --color-pak-10: var(--pak-10);
+  --color-pak-100: var(--pak-100);
+  --color-pak-200: var(--pak-200);
+  --color-pak-25: var(--pak-25);
+  --color-pak-300: var(--pak-300);
+  --color-pak-400: var(--pak-400);
+  --color-pak-50: var(--pak-50);
+  --color-pak-500: var(--pak-500);
+  --color-pak-600: var(--pak-600);
+  --color-pak-700: var(--pak-700);
+  --color-pak-800: var(--pak-800);
+  --color-pak-850: var(--pak-850);
+  --color-pak-900: var(--pak-900);
+  --color-pak-950: var(--pak-950);
+  --color-pao-100: var(--pao-100);
+  --color-pao-200: var(--pao-200);
+  --color-pao-25: var(--pao-25);
+  --color-pao-300: var(--pao-300);
+  --color-pao-400: var(--pao-400);
+  --color-pao-50: var(--pao-50);
+  --color-pao-500: var(--pao-500);
+  --color-pao-600: var(--pao-600);
+  --color-pao-700: var(--pao-700);
+  --color-pao-800: var(--pao-800);
+  --color-pao-900: var(--pao-900);
+  --color-pao-950: var(--pao-950);
+  --color-pap-100: var(--pap-100);
+  --color-pap-200: var(--pap-200);
+  --color-pap-25: var(--pap-25);
+  --color-pap-300: var(--pap-300);
+  --color-pap-400: var(--pap-400);
+  --color-pap-50: var(--pap-50);
+  --color-pap-500: var(--pap-500);
+  --color-pap-600: var(--pap-600);
+  --color-pap-700: var(--pap-700);
+  --color-pap-800: var(--pap-800);
+  --color-pap-900: var(--pap-900);
+  --color-pap-950: var(--pap-950);
+  --color-par-100: var(--par-100);
+  --color-par-200: var(--par-200);
+  --color-par-25: var(--par-25);
+  --color-par-300: var(--par-300);
+  --color-par-400: var(--par-400);
+  --color-par-50: var(--par-50);
+  --color-par-500: var(--par-500);
+  --color-par-600: var(--par-600);
+  --color-par-700: var(--par-700);
+  --color-par-800: var(--par-800);
+  --color-par-900: var(--par-900);
+  --color-par-950: var(--par-950);
+  --color-pas-100: var(--pas-100);
+  --color-pas-200: var(--pas-200);
+  --color-pas-300: var(--pas-300);
+  --color-pas-400: var(--pas-400);
+  --color-pas-50: var(--pas-50);
+  --color-pas-500: var(--pas-500);
+  --color-pas-600: var(--pas-600);
+  --color-pas-700: var(--pas-700);
+  --color-pas-800: var(--pas-800);
+  --color-pas-900: var(--pas-900);
+  --color-pas-950: var(--pas-950);
+  --color-pay-100: var(--pay-100);
+  --color-pay-200: var(--pay-200);
+  --color-pay-25: var(--pay-25);
+  --color-pay-300: var(--pay-300);
+  --color-pay-400: var(--pay-400);
+  --color-pay-50: var(--pay-50);
+  --color-pay-500: var(--pay-500);
+  --color-pay-600: var(--pay-600);
+  --color-pay-700: var(--pay-700);
+  --color-pay-800: var(--pay-800);
+  --color-pay-900: var(--pay-900);
+  --color-pay-950: var(--pay-950);
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #ffffff;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: #01091E;
+  color: var(--foreground) !important;
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+@layer utilities {
+    
+    .scrollbar-hide{
+        /* IE and Edge */
+        -ms-overflow-style: 'none';
+        /* Firefox */
+        scrollbar-width: 'none',
+    }
+
+    /* Safari and Chrome */
+    .scrollbar-hide::-webkit-scrollbar{
+        display: none;
+    }
+}

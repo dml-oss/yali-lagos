@@ -1,0 +1,120 @@
+/* Footer Styles */
+
+.footer-container {
+  background: #0D242A; /* Dark blue from screenshot */
+}
+
+.footer-card {
+  background: #FFFFFF; /* White card */
+  border-radius: 16px; /* Rounded corners */
+  padding: 3rem 4rem 5rem; /* Top, horizontal, bottom padding */
+}
+
+.logo-section svg {
+  width: 84px; /* Logo from screenshot - two squares forming L shape */
+  height: 84px;
+}
+
+.footer-logo-left {
+  fill: #0D242A; /* Dark blue square */
+}
+
+.footer-logo-right {
+  fill: #A2BAD0; /* Lighter blue/gray square */
+}
+
+.link-section h3 {
+  font-size: 14px;
+  color: #6E798B; /* Gray label text */
+  margin-bottom: 15px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+
+.company-links, .legal-links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.nav-link {
+  color: #1A2436; /* Primary text */
+  font-size: 16px;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.newsletter-section form {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.newsletter-input {
+  background: #F5F7FA; /* Light gray input */
+  border: 1px solid transparent;
+  padding: 0 15px;
+  height: 46px;
+  font-size: 14px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.newsletter-submit {
+  background: #0D242A; /* Dark blue button */
+  color: white;
+  border: none;
+  padding: 0 15px;
+  height: 46px;
+  min-width: 54px;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+.main-text h2 {
+  color: #1A2436; /* Dark text */
+  font-family: 'Inter', sans-serif;
+  line-height: 1.25;
+}
+
+.main-text h2:first-of-type {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.main-text h2:nth-of-type(2) {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.main-text h2:last-of-type {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.start-button {
+  background: #0D242A; /* Dark blue */
+  color: white;
+  border: none;
+  padding: 13px 26px;
+  margin-top: 24px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background: rgba(13, 36, 42, 0.15); /* Light gray line */
+  margin-top: 24px;
+}
+
+.copyright {
+  color: #A2BAD0; /* Light blue text */
+  font-size: 12px;
+  margin-top: 33px;
+}
