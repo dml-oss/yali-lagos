@@ -10,7 +10,7 @@ const Partners = () => {
 
 
     return (
-        <section className="relative w-full bg-white py-40">
+        <section className="relative w-full bg-white py-40 px-6">
            
            <div className="max-w-7xl mx-auto">
                 

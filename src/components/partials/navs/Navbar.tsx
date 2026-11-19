@@ -99,7 +99,7 @@ const Navbar = (data: INavBar) => {
                 <NavigationMenuItem key={link.label}>
                     <NavigationMenuTrigger
                         className={cx(
-                            'bg-white text-[#171817]',
+                            'bg-white text-[#171817] text-lg',
                             'hover:bg-stone-100 hover:text-[#171817]',
                             'focus:bg-stone-100 focus:text-[#171817]',
                             'data-[state=open]:bg-stone-100 data-[state=open]:text-[#171817]',
@@ -112,7 +112,7 @@ const Navbar = (data: INavBar) => {
                     </NavigationMenuTrigger>
 
                     <NavigationMenuContent className="left-0 top-full mt-1.5 rounded-lg border border-[#e4e0df] bg-white p-0 text-stone-500 shadow-lg">
-                        <div className="w-[300px] md:w-[400px]">
+                        <div className="w-[400px]">
                             {link.sections.map((section) => (
                                 <div key={section.label} className="p-3">
                                     <p className="mb-2 px-2 text-xs font-semibold tracking-wider text-stone-500 uppercase">
@@ -142,7 +142,7 @@ const Navbar = (data: INavBar) => {
                 <NavigationMenuItem key={link.label}>
                     <NavigationMenuTrigger
                         className={cx(
-                            'bg-white text-[#171817]',
+                            'bg-white text-[#171817] text-lg',
                             'hover:bg-stone-100 hover:text-[#171817]',
                             'focus:bg-stone-100 focus:text-[#171817]',
                             'data-[state=open]:bg-stone-100 data-[state=open]:text-[#171817]',
@@ -155,7 +155,7 @@ const Navbar = (data: INavBar) => {
                     </NavigationMenuTrigger>
 
                     <NavigationMenuContent className="left-0 top-full mt-1.5 rounded-lg border border-[#e4e0df] bg-white p-0 text-[#171817] shadow-lg">
-                        <ul className="w-[380px] space-y-1 p-2">
+                        <ul className="w-[400px] ">
                             {link.dropdownItems.map((item) => (
                                 <li key={item.title}>
                                     <NavDropdownLink
@@ -198,7 +198,7 @@ const Navbar = (data: INavBar) => {
     return (
         <header
             className={cx(
-                'sticky top-0 z-50 w-full bg-white font-normal backdrop-blur-md transition-all duration-300',
+                'sticky top-0 z-50 w-full bg-white font-normal backdrop-blur-md',
                 className,
             )}
         >
@@ -209,13 +209,13 @@ const Navbar = (data: INavBar) => {
                 )}
             >
                 <div className="flex min-w-0 items-center gap-3 sm:gap-4">
-                    <Logo
+                     <Logo
                         href={siteConfig.baseLinks.home}
                         className="w-20 md:w-22"
                         src={
                             isMenuOpen
-                                ? '/blocks/yali-dk.svg'
-                                : '/blocks/yali-bg.svg'
+                                ? '/blocks/yali-lagos-bk.svg'
+                                : '/blocks/yali-lagos-wh.svg'
                         }
                     />
 
@@ -271,7 +271,7 @@ const Navbar = (data: INavBar) => {
                         aria-label={
                             isMenuOpen ? 'Close main menu' : 'Open main menu'
                         }
-                        className="relative flex items-center justify-center text-black lg:hidden"
+                        className="relative flex size-9 shrink-0 items-center justify-center rounded-md text-black lg:hidden"
                         onClick={() => setIsMenuOpen((prev) => !prev)}
                     >
                         {isMenuOpen ? (

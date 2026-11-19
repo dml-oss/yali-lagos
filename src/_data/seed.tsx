@@ -24,7 +24,7 @@ export const NavigationItems: NavItem[] = [
                 title: 'Our History',
                 description: 'Explore our journey, milestones and impact',
                 href: '/who-we-are/our-history',
-                image: '/images/blocks/Yali-medical outreach.jpeg',
+                image: '/images/blocks/yali-impact.jpeg',
                 iconVariant: 'neutral',
             },
             {
@@ -34,18 +34,18 @@ export const NavigationItems: NavItem[] = [
                 image: '/images/blocks/yali-masterclass.jpeg',
                 iconVariant: 'neutral',
             },
-            // {
-            //     title: 'Network Committees',
-            //     description: 'How members work together to deliver impact.',
-            //     href: 'https://x.com/thetroott',
-            //     external: true,
-            //     image: "/images/blocks/Join-yali.jpeg",
-            //     iconVariant: 'neutral',
-            // },
+            {
+                title: 'Network Committees',
+                description: 'How members work together to deliver impact.',
+                href: 'https://x.com/thetroott',
+                external: true,
+                image: "/images/blocks/Join-yali.jpeg",
+                iconVariant: 'neutral',
+            },
             {
                 title: 'Constitution and Governance',
                 description:
-                    'Understand the guidelines that shape how we operate.',
+                    'Understand the YALI LAGOS consitution.',
                 href: 'https://x.com/thetroott',
                 external: true,
                 image: '/images/blocks/yali-capacity.jpeg',

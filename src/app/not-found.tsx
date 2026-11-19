@@ -1,50 +1,46 @@
+
 "use client";
 
-
-import Button from "@/components/partials/buttons/Button"
-import useGoTo from "@/hooks/useGoTo"
-
+import Button from "@/components/partials/buttons/Button";
+import useGoTo from "@/hooks/useGoTo";
 
 const NotFound = () => {
-
-    const { goTo } = useGoTo()
-
+    const { goTo } = useGoTo();
 
     return (
-
-
-        <div className="flex flex-col">
-               
-                <p className="text-lg md:text-base font-semibold text-neutral-400 dark:text-neutral-500">
-                    404
+        <div className="flex min-h-[60vh] w-full bg-white items-center justify-center px-6 py-20">
+            <div className="flex w-full max-w-xl flex-col items-center text-center">
+                <p className="text-sm font-semibold tracking-[0.2em] text-[#2aaae0] uppercase">
+                    Error 404
                 </p>
-                
-                <h1 className="mt-4 text-4xl font-bold tracking-tight text-neutral-800 sm:text-5xl dark:text-neutral-100">
+
+                <h1 className="mt-5 text-4xl font-bold tracking-tight text-[#171817] sm:text-5xl md:text-6xl">
                     Page not found
                 </h1>
-                
-                <p className="mt-4 text-lg md:text-base text-neutral-600 dark:text-neutral-400">
-                    Sorry, we couldn’t find the page you’re looking for.
+
+                <p className="mt-5 max-w-md text-base leading-7 text-stone-500 sm:text-lg">
+                    The page you are looking for may have been moved, removed,
+                    or is temporarily unavailable.
                 </p>
 
-                <Button
-                    type="ghost"
-                    semantic="blue"
-                    size="lg"
-                    block={false}
-                    loading={false}
-                    className="form-button md:min-w-[160px] min-w-full font-intersemibold text-lg text-white"
-                    text={{
-                        label: `Go Home`,
-                        size: 14,
-                        weight: 'bold'
-                    }}
-                    onClick={(e) => { goTo('/') }}
-                />
+                <div className="mt-8 flex w-full flex-col items-center gap-4 sm:w-auto">
+                    <Button
+                        type="secondary"
+                        size="sm"
+                        block={false}
+                        loading={false}
+                        className="form-button min-w-full font-intersemibold text-lg text-white sm:min-w-[180px]"
+                        text={{
+                            label: "Go Home",
+                            size: 14,
+                            weight: "bold",
+                        }}
+                        onClick={() => goTo("/")}
+                    />
+                </div>
+            </div>
+        </div>
+    );
+};
 
-         </div>
-
-                )
-}
-
-export default NotFound
+export default NotFound;

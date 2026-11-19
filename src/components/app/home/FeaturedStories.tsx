@@ -70,9 +70,9 @@ const FeaturedStories = () => {
                             stories.length > 0 &&
                             stories
                                 .slice(0, 6)
-                                .map((story) => (
+                                .map((story, index) => (
                                     <StoryCard
-                                        key={story.title}
+                                        key={`${story.slug}-${index}`}
                                         title={story.title}
                                         desc={story.desc}
                                         image={story.image}
