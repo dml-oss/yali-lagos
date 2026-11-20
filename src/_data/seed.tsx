@@ -17,7 +17,7 @@ export const NavigationItems: NavItem[] = [
             {
                 title: 'About the Network',
                 description: 'Learn about our mission, vision.',
-                href: siteConfig.baseLinks.about,
+                href: siteConfig.baseLinks.whoweare,
                 image: '/images/blocks/yali-impact.jpeg',
             },
             {
@@ -37,16 +37,15 @@ export const NavigationItems: NavItem[] = [
             {
                 title: 'Network Committees',
                 description: 'How members work together to deliver impact.',
-                href: 'https://x.com/thetroott',
+                href: '/who-we-are/commities',
                 external: true,
-                image: "/images/blocks/Join-yali.jpeg",
+                image: '/images/blocks/Join-yali.jpeg',
                 iconVariant: 'neutral',
             },
             {
                 title: 'Constitution and Governance',
-                description:
-                    'Understand the YALI LAGOS consitution.',
-                href: 'https://x.com/thetroott',
+                description: 'Understand the YALI LAGOS consitution.',
+                href: '/who-we-are/governance',
                 external: true,
                 image: '/images/blocks/yali-capacity.jpeg',
                 iconVariant: 'neutral',
@@ -348,7 +347,7 @@ export const stories: IStory[] = [
 
             `I am overall pleased to see this emerging consistent thesis. But I keep feeling like we're missing something substantial.`,
 
-            `I've had the immense privilege over the last ten years of learning from world-class leaders while helping build FaithTech into a global community of hundreds of leaders. The ones I keep coming back to for advice are rarely just impressive. Yes, they are deeply human. They listen well. They care about people. They know how to be present.`,
+            `I've had the immense privilege over the last ten years of learning from world-class leaders while helping build YALI Network Lagosinto a global community of hundreds of leaders. The ones I keep coming back to for advice are rarely just impressive. Yes, they are deeply human. They listen well. They care about people. They know how to be present.`,
 
             `But the best of them seem to be operating from something deeper than human skill alone.`,
 
@@ -376,7 +375,7 @@ export const stories: IStory[] = [
 
             `AI tends to push us toward what is probable. AI is incredible at recognizing patterns and generating likely outputs but it can subtly train us to trust what is most plausible rather than to trust what may be most faithful or countercultural.`,
 
-            `Godly leaders are willing to act on faithful conviction. It comes from a deep conviction from the Lord. Jesus repeatedly acted in ways that confounded conventional expectations. He touched people others avoided, withdrew when crowds wanted more, and rejected shortcuts to power. It reminds me of 2 Timothy 1:7: God gave us a spirit not of fear but of power and love and self-control. I remind our staff team often that the most important thing we can do in leading FaithTech is act in faithful obedience to the Lord. The fruit of that is always the right fruit.`,
+            `Godly leaders are willing to act on faithful conviction. It comes from a deep conviction from the Lord. Jesus repeatedly acted in ways that confounded conventional expectations. He touched people others avoided, withdrew when crowds wanted more, and rejected shortcuts to power. It reminds me of 2 Timothy 1:7: God gave us a spirit not of fear but of power and love and self-control. I remind our staff team often that the most important thing we can do in leading YALI Network Lagosis act in faithful obedience to the Lord. The fruit of that is always the right fruit.`,
 
             `3. Lead With a Patient Discernment.`,
 
@@ -414,7 +413,7 @@ export const stories: IStory[] = [
 
             `I am overall pleased to see this emerging consistent thesis. But I keep feeling like we're missing something substantial.`,
 
-            `I've had the immense privilege over the last ten years of learning from world-class leaders while helping build FaithTech into a global community of hundreds of leaders. The ones I keep coming back to for advice are rarely just impressive. Yes, they are deeply human. They listen well. They care about people. They know how to be present.`,
+            `I've had the immense privilege over the last ten years of learning from world-class leaders while helping build YALI Network Lagosinto a global community of hundreds of leaders. The ones I keep coming back to for advice are rarely just impressive. Yes, they are deeply human. They listen well. They care about people. They know how to be present.`,
 
             `But the best of them seem to be operating from something deeper than human skill alone.`,
 
@@ -442,7 +441,7 @@ export const stories: IStory[] = [
 
             `AI tends to push us toward what is probable. AI is incredible at recognizing patterns and generating likely outputs but it can subtly train us to trust what is most plausible rather than to trust what may be most faithful or countercultural.`,
 
-            `Godly leaders are willing to act on faithful conviction. It comes from a deep conviction from the Lord. Jesus repeatedly acted in ways that confounded conventional expectations. He touched people others avoided, withdrew when crowds wanted more, and rejected shortcuts to power. It reminds me of 2 Timothy 1:7: God gave us a spirit not of fear but of power and love and self-control. I remind our staff team often that the most important thing we can do in leading FaithTech is act in faithful obedience to the Lord. The fruit of that is always the right fruit.`,
+            `Godly leaders are willing to act on faithful conviction. It comes from a deep conviction from the Lord. Jesus repeatedly acted in ways that confounded conventional expectations. He touched people others avoided, withdrew when crowds wanted more, and rejected shortcuts to power. It reminds me of 2 Timothy 1:7: God gave us a spirit not of fear but of power and love and self-control. I remind our staff team often that the most important thing we can do in leading YALI Network Lagosis act in faithful obedience to the Lord. The fruit of that is always the right fruit.`,
 
             `3. Lead With a Patient Discernment.`,
 
@@ -480,7 +479,7 @@ export const stories: IStory[] = [
 
             `I am overall pleased to see this emerging consistent thesis. But I keep feeling like we're missing something substantial.`,
 
-            `I've had the immense privilege over the last ten years of learning from world-class leaders while helping build FaithTech into a global community of hundreds of leaders. The ones I keep coming back to for advice are rarely just impressive. Yes, they are deeply human. They listen well. They care about people. They know how to be present.`,
+            `I've had the immense privilege over the last ten years of learning from world-class leaders while helping build YALI Network Lagosinto a global community of hundreds of leaders. The ones I keep coming back to for advice are rarely just impressive. Yes, they are deeply human. They listen well. They care about people. They know how to be present.`,
 
             `But the best of them seem to be operating from something deeper than human skill alone.`,
 
@@ -508,7 +507,7 @@ export const stories: IStory[] = [
 
             `AI tends to push us toward what is probable. AI is incredible at recognizing patterns and generating likely outputs but it can subtly train us to trust what is most plausible rather than to trust what may be most faithful or countercultural.`,
 
-            `Godly leaders are willing to act on faithful conviction. It comes from a deep conviction from the Lord. Jesus repeatedly acted in ways that confounded conventional expectations. He touched people others avoided, withdrew when crowds wanted more, and rejected shortcuts to power. It reminds me of 2 Timothy 1:7: God gave us a spirit not of fear but of power and love and self-control. I remind our staff team often that the most important thing we can do in leading FaithTech is act in faithful obedience to the Lord. The fruit of that is always the right fruit.`,
+            `Godly leaders are willing to act on faithful conviction. It comes from a deep conviction from the Lord. Jesus repeatedly acted in ways that confounded conventional expectations. He touched people others avoided, withdrew when crowds wanted more, and rejected shortcuts to power. It reminds me of 2 Timothy 1:7: God gave us a spirit not of fear but of power and love and self-control. I remind our staff team often that the most important thing we can do in leading YALI Network Lagosis act in faithful obedience to the Lord. The fruit of that is always the right fruit.`,
 
             `3. Lead With a Patient Discernment.`,
 
@@ -546,7 +545,7 @@ export const stories: IStory[] = [
 
             `I am overall pleased to see this emerging consistent thesis. But I keep feeling like we're missing something substantial.`,
 
-            `I've had the immense privilege over the last ten years of learning from world-class leaders while helping build FaithTech into a global community of hundreds of leaders. The ones I keep coming back to for advice are rarely just impressive. Yes, they are deeply human. They listen well. They care about people. They know how to be present.`,
+            `I've had the immense privilege over the last ten years of learning from world-class leaders while helping build YALI Network Lagosinto a global community of hundreds of leaders. The ones I keep coming back to for advice are rarely just impressive. Yes, they are deeply human. They listen well. They care about people. They know how to be present.`,
 
             `But the best of them seem to be operating from something deeper than human skill alone.`,
 
@@ -574,7 +573,7 @@ export const stories: IStory[] = [
 
             `AI tends to push us toward what is probable. AI is incredible at recognizing patterns and generating likely outputs but it can subtly train us to trust what is most plausible rather than to trust what may be most faithful or countercultural.`,
 
-            `Godly leaders are willing to act on faithful conviction. It comes from a deep conviction from the Lord. Jesus repeatedly acted in ways that confounded conventional expectations. He touched people others avoided, withdrew when crowds wanted more, and rejected shortcuts to power. It reminds me of 2 Timothy 1:7: God gave us a spirit not of fear but of power and love and self-control. I remind our staff team often that the most important thing we can do in leading FaithTech is act in faithful obedience to the Lord. The fruit of that is always the right fruit.`,
+            `Godly leaders are willing to act on faithful conviction. It comes from a deep conviction from the Lord. Jesus repeatedly acted in ways that confounded conventional expectations. He touched people others avoided, withdrew when crowds wanted more, and rejected shortcuts to power. It reminds me of 2 Timothy 1:7: God gave us a spirit not of fear but of power and love and self-control. I remind our staff team often that the most important thing we can do in leading YALI Network Lagosis act in faithful obedience to the Lord. The fruit of that is always the right fruit.`,
 
             `3. Lead With a Patient Discernment.`,
 
@@ -612,7 +611,7 @@ export const stories: IStory[] = [
 
             `I am overall pleased to see this emerging consistent thesis. But I keep feeling like we're missing something substantial.`,
 
-            `I've had the immense privilege over the last ten years of learning from world-class leaders while helping build FaithTech into a global community of hundreds of leaders. The ones I keep coming back to for advice are rarely just impressive. Yes, they are deeply human. They listen well. They care about people. They know how to be present.`,
+            `I've had the immense privilege over the last ten years of learning from world-class leaders while helping build YALI Network Lagosinto a global community of hundreds of leaders. The ones I keep coming back to for advice are rarely just impressive. Yes, they are deeply human. They listen well. They care about people. They know how to be present.`,
 
             `But the best of them seem to be operating from something deeper than human skill alone.`,
 
@@ -640,7 +639,7 @@ export const stories: IStory[] = [
 
             `AI tends to push us toward what is probable. AI is incredible at recognizing patterns and generating likely outputs but it can subtly train us to trust what is most plausible rather than to trust what may be most faithful or countercultural.`,
 
-            `Godly leaders are willing to act on faithful conviction. It comes from a deep conviction from the Lord. Jesus repeatedly acted in ways that confounded conventional expectations. He touched people others avoided, withdrew when crowds wanted more, and rejected shortcuts to power. It reminds me of 2 Timothy 1:7: God gave us a spirit not of fear but of power and love and self-control. I remind our staff team often that the most important thing we can do in leading FaithTech is act in faithful obedience to the Lord. The fruit of that is always the right fruit.`,
+            `Godly leaders are willing to act on faithful conviction. It comes from a deep conviction from the Lord. Jesus repeatedly acted in ways that confounded conventional expectations. He touched people others avoided, withdrew when crowds wanted more, and rejected shortcuts to power. It reminds me of 2 Timothy 1:7: God gave us a spirit not of fear but of power and love and self-control. I remind our staff team often that the most important thing we can do in leading YALI Network Lagosis act in faithful obedience to the Lord. The fruit of that is always the right fruit.`,
 
             `3. Lead With a Patient Discernment.`,
 
@@ -678,7 +677,7 @@ export const stories: IStory[] = [
 
             `I am overall pleased to see this emerging consistent thesis. But I keep feeling like we're missing something substantial.`,
 
-            `I've had the immense privilege over the last ten years of learning from world-class leaders while helping build FaithTech into a global community of hundreds of leaders. The ones I keep coming back to for advice are rarely just impressive. Yes, they are deeply human. They listen well. They care about people. They know how to be present.`,
+            `I've had the immense privilege over the last ten years of learning from world-class leaders while helping build YALI Network Lagosinto a global community of hundreds of leaders. The ones I keep coming back to for advice are rarely just impressive. Yes, they are deeply human. They listen well. They care about people. They know how to be present.`,
 
             `But the best of them seem to be operating from something deeper than human skill alone.`,
 
@@ -706,7 +705,7 @@ export const stories: IStory[] = [
 
             `AI tends to push us toward what is probable. AI is incredible at recognizing patterns and generating likely outputs but it can subtly train us to trust what is most plausible rather than to trust what may be most faithful or countercultural.`,
 
-            `Godly leaders are willing to act on faithful conviction. It comes from a deep conviction from the Lord. Jesus repeatedly acted in ways that confounded conventional expectations. He touched people others avoided, withdrew when crowds wanted more, and rejected shortcuts to power. It reminds me of 2 Timothy 1:7: God gave us a spirit not of fear but of power and love and self-control. I remind our staff team often that the most important thing we can do in leading FaithTech is act in faithful obedience to the Lord. The fruit of that is always the right fruit.`,
+            `Godly leaders are willing to act on faithful conviction. It comes from a deep conviction from the Lord. Jesus repeatedly acted in ways that confounded conventional expectations. He touched people others avoided, withdrew when crowds wanted more, and rejected shortcuts to power. It reminds me of 2 Timothy 1:7: God gave us a spirit not of fear but of power and love and self-control. I remind our staff team often that the most important thing we can do in leading YALI Network Lagosis act in faithful obedience to the Lord. The fruit of that is always the right fruit.`,
 
             `3. Lead With a Patient Discernment.`,
 
@@ -744,7 +743,7 @@ export const stories: IStory[] = [
 
             `I am overall pleased to see this emerging consistent thesis. But I keep feeling like we're missing something substantial.`,
 
-            `I've had the immense privilege over the last ten years of learning from world-class leaders while helping build FaithTech into a global community of hundreds of leaders. The ones I keep coming back to for advice are rarely just impressive. Yes, they are deeply human. They listen well. They care about people. They know how to be present.`,
+            `I've had the immense privilege over the last ten years of learning from world-class leaders while helping build YALI Network Lagosinto a global community of hundreds of leaders. The ones I keep coming back to for advice are rarely just impressive. Yes, they are deeply human. They listen well. They care about people. They know how to be present.`,
 
             `But the best of them seem to be operating from something deeper than human skill alone.`,
 
@@ -772,7 +771,7 @@ export const stories: IStory[] = [
 
             `AI tends to push us toward what is probable. AI is incredible at recognizing patterns and generating likely outputs but it can subtly train us to trust what is most plausible rather than to trust what may be most faithful or countercultural.`,
 
-            `Godly leaders are willing to act on faithful conviction. It comes from a deep conviction from the Lord. Jesus repeatedly acted in ways that confounded conventional expectations. He touched people others avoided, withdrew when crowds wanted more, and rejected shortcuts to power. It reminds me of 2 Timothy 1:7: God gave us a spirit not of fear but of power and love and self-control. I remind our staff team often that the most important thing we can do in leading FaithTech is act in faithful obedience to the Lord. The fruit of that is always the right fruit.`,
+            `Godly leaders are willing to act on faithful conviction. It comes from a deep conviction from the Lord. Jesus repeatedly acted in ways that confounded conventional expectations. He touched people others avoided, withdrew when crowds wanted more, and rejected shortcuts to power. It reminds me of 2 Timothy 1:7: God gave us a spirit not of fear but of power and love and self-control. I remind our staff team often that the most important thing we can do in leading YALI Network Lagosis act in faithful obedience to the Lord. The fruit of that is always the right fruit.`,
 
             `3. Lead With a Patient Discernment.`,
 
@@ -841,7 +840,6 @@ export const profiles: ITeamMember[] = [
         position: 'center 25%',
     },
 ];
-
 
 export const upcomingEvents: IEvent[] = [
     {
@@ -1049,11 +1047,32 @@ export const collection: ICollection = {
 };
 
 export const avatars = [
-    { name: 'sandra', avatar: 'https://storage.googleapis.com/pacepard-buckets/sandra.png' },
-    { name: 'femi', avatar: 'https://storage.googleapis.com/pacepard-buckets/femi.png' },
-    { name: 'vivek', avatar: 'https://storage.googleapis.com/pacepard-buckets/vivek.png' },
-    { name: 'zuri', avatar: 'https://storage.googleapis.com/pacepard-buckets/zuri.png' },
-    { name: 'minho', avatar: 'https://storage.googleapis.com/pacepard-buckets/Minho.png' },
-    { name: 'sophie', avatar: 'https://storage.googleapis.com/pacepard-buckets/sophie.png' },
-    { name: 'trab', avatar: 'https://storage.googleapis.com/pacepard-buckets/trab.png' },
-]
+    {
+        name: 'sandra',
+        avatar: 'https://storage.googleapis.com/pacepard-buckets/sandra.png',
+    },
+    {
+        name: 'femi',
+        avatar: 'https://storage.googleapis.com/pacepard-buckets/femi.png',
+    },
+    {
+        name: 'vivek',
+        avatar: 'https://storage.googleapis.com/pacepard-buckets/vivek.png',
+    },
+    {
+        name: 'zuri',
+        avatar: 'https://storage.googleapis.com/pacepard-buckets/zuri.png',
+    },
+    {
+        name: 'minho',
+        avatar: 'https://storage.googleapis.com/pacepard-buckets/Minho.png',
+    },
+    {
+        name: 'sophie',
+        avatar: 'https://storage.googleapis.com/pacepard-buckets/sophie.png',
+    },
+    {
+        name: 'trab',
+        avatar: 'https://storage.googleapis.com/pacepard-buckets/trab.png',
+    },
+];
