@@ -132,7 +132,7 @@ const Navbar = (data: INavBar) => {
                                     {upcomingEvents.map((event) => (
                                         <Link
                                             key={event.slug}
-                                            href={siteConfig.baseLinks.events}
+                                            href={`/events/${event.slug}`}
                                             className="group flex items-center gap-3 rounded-lg p-3 transition-colors hover:bg-stone-100"
                                         >
                                             {/* Event information */}
