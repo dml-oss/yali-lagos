@@ -88,14 +88,14 @@ export const NavigationItems: NavItem[] = [
                     {
                         title: 'Personal devotion',
                         description: 'Build a daily listening habit',
-                        href: siteConfig.baseLinks.events,
+                        href: '/events/personal-devotion',
                         image: '/images/blocks/child.png',
                         iconVariant: 'neutral',
                     },
                     {
                         title: 'Small groups',
                         description: 'Share teachings with your group',
-                        href: siteConfig.baseLinks.events,
+                        href: '/events/small-groups',
                         image: '/images/blocks/Join-yali.jpeg',
                         iconVariant: 'neutral',
                     },
@@ -103,14 +103,14 @@ export const NavigationItems: NavItem[] = [
                         title: 'Church library',
                         description:
                             'One place for your congregation’s sermons',
-                        href: siteConfig.baseLinks.events,
+                        href: '/events/church-library',
                         image: '/images/blocks/yali-inclusive.jpeg',
                         iconVariant: 'brand',
                     },
                     {
                         title: 'Share with family',
                         description: 'Send messages to friends and family',
-                        href: siteConfig.baseLinks.events,
+                        href: '/events/share-with-family',
                         image: '/images/blocks/what we do.jpeg',
                         iconVariant: 'neutral',
                     },
