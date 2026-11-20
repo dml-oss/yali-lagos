@@ -13,6 +13,15 @@ const nextConfig: NextConfig = {
         ],
 
     },
+    async redirects() {
+        return [
+            {
+                source: '/who-we-are/',
+                destination: '/events',
+                permanent: true,
+            },
+        ];
+    },
     webpack: (config) => {
         config.module.rules.push({ test: /\.node/, use: "raw-loader" });
         return config;
