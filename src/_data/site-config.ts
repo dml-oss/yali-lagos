@@ -49,6 +49,8 @@ export const siteConfig = {
     programs: "/programs",
     events: "/events",
     stories: "/stories",
+    whoweare: "/who-we-are",
+    ourhistory: "/our-history",
     about: "/about",
     faqs: "/faqs",
     join: "/join",
