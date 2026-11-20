@@ -608,7 +608,7 @@ export type IEvent = {
     alt?: string;
     tags?: string[];
     isFeatured?: boolean;
-    slug?: string;
+    slug: string;
 };
 
 export interface ITestimonial {
