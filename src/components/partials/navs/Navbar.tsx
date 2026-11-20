@@ -1,8 +1,8 @@
-
 'use client';
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { Linkedin, X } from 'lucide-react';
 
@@ -22,7 +22,7 @@ import { cx } from '@/lib/utils';
 import Logo from '@/components/ui/Logo';
 import Button from '../buttons/Button';
 import { siteConfig } from '@/_data/site-config';
-import { NavigationItems } from '@/_data/seed';
+import { events, NavigationItems, upcomingEvents } from '@/_data/seed';
 
 interface INavBar {
     className?: string;
@@ -38,6 +38,14 @@ const Navbar = (data: INavBar) => {
     const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
     const navItems = links ?? NavigationItems;
+
+    const eventImages: Record<string, string> = {
+        'ai-work-kingdom': '/images/blocks/yali-impact.jpeg',
+        'create-weekend-agtech': '/images/blocks/yali-masterclass.jpeg',
+        'story-night': '/images/blocks/Join-yali.jpeg',
+        'pan-african-builders-call': '/images/blocks/yali-work.jpeg',
+        'pan-african-builders-call-2': '/images/blocks/yali-inclusive.jpeg',
+    };
 
     const closeMobileMenu = () => {
         setIsMenuOpen(false);
@@ -94,44 +102,100 @@ const Navbar = (data: INavBar) => {
                             pathname.startsWith(item.href + '/')),
                 ));
 
+        const triggerClassName = cx(
+            'bg-white text-[#171817] text-lg',
+            'hover:bg-stone-100 hover:text-[#171817]',
+            'focus:bg-stone-100 focus:text-[#171817]',
+            'data-[state=open]:bg-stone-100 data-[state=open]:text-[#171817]',
+            isDropdownActive
+                ? 'bg-stone-100 text-[#171817]'
+                : 'bg-white text-[#171817]',
+        );
+
         if ('sections' in link && link.sections) {
+            const isEventsMenu = link.label === 'Events';
+
             return (
                 <NavigationMenuItem key={link.label}>
-                    <NavigationMenuTrigger
-                        className={cx(
-                            'bg-white text-[#171817] text-lg',
-                            'hover:bg-stone-100 hover:text-[#171817]',
-                            'focus:bg-stone-100 focus:text-[#171817]',
-                            'data-[state=open]:bg-stone-100 data-[state=open]:text-[#171817]',
-                            isDropdownActive
-                                ? 'bg-stone-100 text-[#171817]'
-                                : 'bg-white text-[#171817]',
-                        )}
-                    >
+                    <NavigationMenuTrigger className={triggerClassName}>
                         {link.label}
                     </NavigationMenuTrigger>
 
-                    <NavigationMenuContent className="left-0 top-full mt-1.5 rounded-lg border border-[#e4e0df] bg-white p-0 text-stone-500 shadow-lg">
-                        <div className="w-[400px]">
-                            {link.sections.map((section) => (
-                                <div key={section.label} className="p-3">
-                                    <p className="mb-2 px-2 text-xs font-semibold tracking-wider text-stone-500 uppercase">
-                                        {section.label}
-                                    </p>
+                    <NavigationMenuContent className="left-0 top-full mt-1.5 rounded-lg border border-[#e4e0df] bg-white p-0 text-[#171817] shadow-lg">
+                        {isEventsMenu ? (
+                            <div className="w-[430px] p-4">
+                                <p className="mb-3 px-2 text-xs font-semibold tracking-wider text-stone-500 uppercase">
+                                    Upcoming Events
+                                </p>
 
-                                    <ul className="space-y-1">
-                                        {section.items.map((item) => (
-                                            <li key={item.title}>
-                                                <NavDropdownLink
-                                                    item={item}
-                                                    theme="light"
+                                <ul className="space-y-1">
+                                    {upcomingEvents.map((event) => (
+                                        <Link
+                                            key={event.slug}
+                                            href={siteConfig.baseLinks.events}
+                                            className="group flex items-center gap-3 rounded-lg p-3 transition-colors hover:bg-stone-100"
+                                        >
+                                            {/* Event information */}
+                                            <div className="min-w-0 flex-1">
+                                                <p className="truncate text-sm font-semibold text-[#171817]">
+                                                    {event.title}
+                                                </p>
+
+                                                <p className="mt-1 truncate text-xs text-stone-500">
+                                                    {event.location}
+                                                </p>
+                                            </div>
+
+                                            {/* Event image */}
+                                            <div className="relative size-16 shrink-0 overflow-hidden rounded-md bg-stone-200">
+                                                <Image
+                                                    src={
+                                                        eventImages[
+                                                            event.slug
+                                                        ] ?? ''
+                                                    }
+                                                    alt={event.title}
+                                                    fill
+                                                    sizes="64px"
+                                                    className="object-cover transition-transform duration-300 group-hover:scale-110"
                                                 />
-                                            </li>
-                                        ))}
-                                    </ul>
+                                            </div>
+                                        </Link>
+                                    ))}
+                                </ul>
+
+                                <div className="mt-3 border-t border-stone-200 pt-3">
+                                    <Link
+                                        href={siteConfig.baseLinks.events}
+                                        className="flex items-center justify-between rounded-md px-2 py-2 text-sm font-semibold text-[#171817] transition-colors hover:bg-stone-100 hover:text-[#2aaae0]"
+                                    >
+                                        View all events
+                                        <span>→</span>
+                                    </Link>
                                 </div>
-                            ))}
-                        </div>
+                            </div>
+                        ) : (
+                            <div className="w-[430px] p-4">
+                                {link.sections.map((section) => (
+                                    <div key={section.label}>
+                                        <p className="mb-3 px-2 text-xs font-semibold tracking-wider text-stone-500 uppercase">
+                                            {section.label}
+                                        </p>
+
+                                        <ul className="space-y-1">
+                                            {section.items.map((item) => (
+                                                <li key={item.title}>
+                                                    <NavDropdownLink
+                                                        item={item}
+                                                        theme="light"
+                                                    />
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                ))}
+                            </div>
+                        )}
                     </NavigationMenuContent>
                 </NavigationMenuItem>
             );
@@ -140,31 +204,23 @@ const Navbar = (data: INavBar) => {
         if ('dropdownItems' in link && link.dropdownItems) {
             return (
                 <NavigationMenuItem key={link.label}>
-                    <NavigationMenuTrigger
-                        className={cx(
-                            'bg-white text-[#171817] text-lg',
-                            'hover:bg-stone-100 hover:text-[#171817]',
-                            'focus:bg-stone-100 focus:text-[#171817]',
-                            'data-[state=open]:bg-stone-100 data-[state=open]:text-[#171817]',
-                            isDropdownActive
-                                ? 'bg-stone-100 text-[#171817]'
-                                : 'bg-white text-[#171817]',
-                        )}
-                    >
+                    <NavigationMenuTrigger className={triggerClassName}>
                         {link.label}
                     </NavigationMenuTrigger>
 
                     <NavigationMenuContent className="left-0 top-full mt-1.5 rounded-lg border border-[#e4e0df] bg-white p-0 text-[#171817] shadow-lg">
-                        <ul className="w-[400px] ">
-                            {link.dropdownItems.map((item) => (
-                                <li key={item.title}>
-                                    <NavDropdownLink
-                                        item={item}
-                                        theme="light"
-                                    />
-                                </li>
-                            ))}
-                        </ul>
+                        <div className="w-[430px] p-4">
+                            <ul className="space-y-1">
+                                {link.dropdownItems.map((item) => (
+                                    <li key={item.title}>
+                                        <NavDropdownLink
+                                            item={item}
+                                            theme="light"
+                                        />
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
                     </NavigationMenuContent>
                 </NavigationMenuItem>
             );
@@ -209,7 +265,7 @@ const Navbar = (data: INavBar) => {
                 )}
             >
                 <div className="flex min-w-0 items-center gap-3 sm:gap-4">
-                     <Logo
+                    <Logo
                         href={siteConfig.baseLinks.home}
                         className="w-20 md:w-22"
                         src={
@@ -290,10 +346,34 @@ const Navbar = (data: INavBar) => {
                                     strokeLinejoin="round"
                                     className="size-5"
                                 >
-                                    <rect x="14" y="14" width="7" height="7" rx="1" />
-                                    <rect x="14" y="3" width="7" height="7" rx="1" />
-                                    <rect x="3" y="14" width="7" height="7" rx="1" />
-                                    <rect x="3" y="3" width="7" height="7" rx="1" />
+                                    <rect
+                                        x="14"
+                                        y="14"
+                                        width="7"
+                                        height="7"
+                                        rx="1"
+                                    />
+                                    <rect
+                                        x="14"
+                                        y="3"
+                                        width="7"
+                                        height="7"
+                                        rx="1"
+                                    />
+                                    <rect
+                                        x="3"
+                                        y="14"
+                                        width="7"
+                                        height="7"
+                                        rx="1"
+                                    />
+                                    <rect
+                                        x="3"
+                                        y="3"
+                                        width="7"
+                                        height="7"
+                                        rx="1"
+                                    />
                                 </svg>
                             </div>
                         )}
