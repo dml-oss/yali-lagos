@@ -51,7 +51,6 @@ export const siteConfig = {
     stories: "/stories",
     whoweare: "/who-we-are",
     ourhistory: "/our-history",
-    about: "/about",
     faqs: "/faqs",
     join: "/join",
     login: "login",

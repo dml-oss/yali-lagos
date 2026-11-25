@@ -1,19 +1,13 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { ChevronDown, Check } from 'lucide-react';
 
 import { cx } from '@/lib/utils';
 import { NavDropdownLink } from './NavDropdownLink';
 import { NavDropdownItem, NavItem } from '@/utils/interfaces.util';
-
-type MobileNavListProps = {
-    items: NavItem[];
-    pathname: string;
-    openDropdown: string | null;
-    onToggleDropdown: (label: string) => void;
-    onNavigate: () => void;
-};
+import { upcomingEvents } from '@/_data/seed';
 
 function MobileNavRow({
     item,
@@ -39,6 +33,59 @@ function MobileAccordionPanel({
     onNavigate: () => void;
 }) {
     if ('sections' in link && link.sections) {
+        // Check if this is the Events section - render upcomingEvents grid
+        const isEventsSection = link.label === 'Events';
+
+        if (isEventsSection) {
+            return (
+                <div className="mt-6 space-y-6 w-full max-w-[380px]">
+                    <p className="mb-3 px-2 text-xs font-semibold tracking-wider text-stone-500 uppercase">
+                        Upcoming Events
+                    </p>
+                    <ul className="space-y-1">
+                        {upcomingEvents.map((event) => (
+                            <li key={event.slug} className="flex items-center gap-3 rounded-lg p-3 transition-colors hover:bg-stone-100">
+                                <div className="min-w-0 flex-1">
+                                    <p className="truncate text-sm font-semibold text-white">
+                                        {event.title}
+                                    </p>
+                                    <div className="flex items-baseline text-xs text-white/80">
+                                        <span className="me-2">
+                                            <time className="flex h-[16px] flex-col items-center justify-center rounded-lg bg-[#15150d] text-white">
+                                                {event.day}
+                                            </time>
+                                        </span>
+                                        <span>
+                                            {event.month}
+                                        </span>
+                                    </div>
+                                </div>
+
+                                {/* Event image */}
+                                <div className="relative size-16 shrink-0 overflow-hidden rounded-md bg-stone-200">
+                                    <Image
+                                        src={
+                                            {
+                                                'ai-work-kingdom': '/images/blocks/yali-impact.jpeg',
+                                                'create-weekend-agtech': '/images/blocks/yali-masterclass.jpeg',
+                                                'story-night': '/images/blocks/Join-yali.jpeg',
+                                                'pan-african-builders-call': '/images/blocks/yali-work.jpeg',
+                                                'pan-african-builders-call-2': '/images/blocks/yali-inclusive.jpeg',
+                                            }[event.slug] ?? ''
+                                        }
+                                        alt={event.title}
+                                        fill
+                                        sizes="64px"
+                                        className="object-cover transition-transform duration-300 group-hover:scale-110"
+                                    />
+                                </div>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            );
+        }
+
         return (
             <div className="mt-6 space-y-6 w-full max-w-[380px]">
                 {link.sections.map((section) => (
@@ -79,7 +126,13 @@ export function MobileNavList({
     openDropdown,
     onToggleDropdown,
     onNavigate,
-}: MobileNavListProps) {
+}: {
+    items: NavItem[];
+    pathname: string;
+    openDropdown: string | null;
+    onToggleDropdown: (label: string) => void;
+    onNavigate: () => void;
+}) {
     return (
         <nav className="divide-border flex flex-1 flex-col divide-y divide-white/10 w-full overflow-x-hidden">
             {items.map((link) => {

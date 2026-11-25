@@ -7,7 +7,7 @@ import Button from '@/components/partials/buttons/Button';
 
 const About = () => {
     return (
-        <section className="mt-8 text-black flex max-w-5xl flex-col-reverse gap-6 lg:mt-16 lg:flex-row lg:items-end lg:gap-16">
+        <section className="mt-8 text-black flex max-w-5xl flex-col-reverse gap-6 lg:mt-16 lg:flex-row lg:items-end lg:gap-16 ">
             {/* Images Left - Text Right */}
             <div className="flex flex-col gap-6 text-black lg:gap-12">
                 <ImageSection

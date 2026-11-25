@@ -141,8 +141,15 @@ const Navbar = (data: INavBar) => {
                                                     {event.title}
                                                 </p>
 
-                                                <p className="mt-1 truncate text-xs text-stone-500">
-                                                    {event.location}
+                                                <p className="mt-1 flex items-baseline text-xs text-stone-500">
+                                                    <span className="me-2">
+                                                        <time className="flex h-[16px] flex-col items-center justify-center rounded-lg bg-[#15150d] text-white">
+                                                            {event.day}
+                                                        </time>
+                                                    </span>
+                                                    <span>
+                                                        {event.month}
+                                                    </span>
                                                 </p>
                                             </div>
 
@@ -394,7 +401,7 @@ const Navbar = (data: INavBar) => {
                     items={navItems}
                     pathname={pathname}
                     openDropdown={openDropdown}
-                    onToggleDropdown={(label) =>
+                    onToggleDropdown={(label: any) =>
                         setOpenDropdown((current) =>
                             current === label ? null : label,
                         )
